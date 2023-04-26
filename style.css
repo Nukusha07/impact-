@@ -9,7 +9,7 @@
 	height: 23px;
 	vertical-align: middle;
 	display: inline-block;
-	margin-left: 50px;
+	margin-left: 5%;
 	margin-top: 15px;
 }
 nav a{
@@ -37,7 +37,7 @@ header{
 nav{
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 630px;
+	margin-left: 45%;
 
 }
 .container{
