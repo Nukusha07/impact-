@@ -34,6 +34,7 @@ header{
 	width: 100%;
 	height: 73px;
 	background-color: whitesmoke;
+	z-index: 4;
 }
 nav{
 	display: inline-block;
@@ -191,21 +192,23 @@ button h4{
 }
 .box img{
 	width: 100%;
-	height: 1000px;
+	height: 100%;
 	animation-name: rotate;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
-	border-radius: 50px;
-	z-index: -1;
+	border-radius: 50%;
+	z-index: 2;
 }
 .box{
-	z-index: -1;
+	z-index: 2;
 	width: 877px;
-	height: 1111px;
+	height: 877px;
 	margin-left: 450px;
 	display: inline-block;
 	position: absolute;
-	border-radius: 45px;
+	overflow: hidden;
+
+
 }
 .CONCEPTION{	
 	background-color: #F7F7F7;
@@ -429,10 +432,15 @@ span{
 .small_box div{
 	width: 320px;
 	height: 461px;
-	background-color: #002D69;
+	background-color: #fcfcfc;
 	display: inline-block;
 	vertical-align: middle;
 	overflow: hidden;
+	
+}
+.middlebox{
+	margin-left: 70px;
+	margin-right: 70px;
 }
 .smallboxsucces{
 	width: 21px;
@@ -441,4 +449,44 @@ span{
 .smalboximg{
 	width: 100%;
 	height: 275px;
+}
+.small_boxtext{
+	margin-left: 29px;
+	padding-top: 35px;
+}
+.small_box h4 {
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	font: normal normal bold 13px/31px Brandon Grotesque;
+	letter-spacing: 1.3px;
+	color: #262626;
+}
+.small_box p{
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	font: normal normal normal 14px/31px Tisa OT;
+	letter-spacing: 0px;
+	color: #262626;
+}
+.small_box div div img{
+	margin-top: 60px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.small_box div div a{
+	margin-top: 60px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.some{
+	margin-top: -40px;
+}
+.some img{
+	width: 21px;
+	height: 21px;
+	transform: rotate(-95deg);
+}
+.some a{
+	margin-left: 10px;
 }
