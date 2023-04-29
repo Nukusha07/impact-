@@ -3,20 +3,21 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	overflow-x: hidden;
 }
 .mainlogo{
 	width: 27px;
-	height: 23px;
+	height: 27px;  
 	vertical-align: middle;
 	display: inline-block;
-	margin-left: 5%;
+	margin-left: 9%;
 	margin-top: 15px;
 }
 nav a{
     font-size: 12px;
 	color: black;
 }
-ul{
+nav ul{
 	display: flex;
 	list-style: none;
 	padding-left: 150px ;
@@ -44,26 +45,43 @@ nav{
 	padding-top: 140px;
 	margin: 0 auto;
 	max-width: 1260px;
+	background-color: #F7F7F7;
 }
 .box img{
 	width: 100%;
 	height: 700px;
 	margin-top: 74px;
 }
+nav li :hover{
+	animation-name: lianimation;
+	animation-duration: 1.5s;
+
+}
+@keyframes lianimation{
+	form{
+
+	}
+	to{
+		font-size: 15px;
+		color: #FF7600;
+	}
+}
 nav li ::after{
 	content: "";
 	display: inline-block;
 	width: 2px;
-	height: 100%;
+	height: 20px;
 	background-color: black;
 	vertical-align: middle;
 	margin-left: 20px;
 }
-nav li : last-child ::after {
+li : last-child ::after {
 	display: none;
 }
 .textbox{
 	width: 500px;
+	display: inline-block;
+	vertical-align: top;
 }
 .textbox h1{
 	letter-spacing: 7px;
@@ -116,4 +134,311 @@ button h4{
 .socialicon img{
 	padding-left: 20px;
 	height: 25px;
+}
+@keyframes resize {
+	from{
+		width: 180px;
+		height: 40px;
+		
+	}
+	to{
+		width: 200px;
+		height: 50px;
+		font-size: 15px;
+		border-radius: 10%;
+		box-shadow: 0px 6px 12px #ff7600;
+	}
+}
+.btnanimation:hover{
+	animation-name: resize;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0);
+	}
+	10%{
+		transform: rotate(36deg);
+	}
+	20%{
+		transform: rotate(72deg);
+	}
+	30%{
+		transform: rotate(108deg);
+	}
+	40%{
+		transform: rotate(144deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	60%{
+		transform: rotate(216deg);
+	}
+	70%{
+		transform: rotate(252deg);
+	}
+	80%{
+		transform: rotate(288deg);
+	}
+	90%{
+		transform: rotate(324deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.box img{
+	width: 100%;
+	height: 1000px;
+	animation-name: rotate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	border-radius: 50px;
+	z-index: -1;
+}
+.box{
+	z-index: -1;
+	width: 877px;
+	height: 1111px;
+	margin-left: 450px;
+	display: inline-block;
+	position: absolute;
+	border-radius: 45px;
+}
+.CONCEPTION{	
+	background-color: #F7F7F7;
+}
+.CONCEPTION h2{
+	width: 292px;
+	height: 86px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 30px/43px var(--unnamed-font-family-brandon-grotesque);
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	font: normal normal bold 30px/43px Brandon Grotesque;
+	letter-spacing: 9px;
+	color: #262626;
+}
+.CONCEPTION p{
+	margin-top: 65px;
+	width: 651px;
+	height: 100px;
+	font-size: 18px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/33.3px var(--unnamed-font-family-tisa-ot);
+	etter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	font: normal normal normal 18px/33px Tisa OT;
+	letter-spacing: 0px;
+	color: #262626;
+}
+.CONCEPTION div div{
+	margin-top: 90px ;
+	width: 416px;
+	height: 428px;
+	background-color: blue;
+	margin-left: 1px;
+	display: inline-block;
+}
+.CONCEPTION h3{
+	padding-left: 89px;
+	padding-top: 60px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 24px/var(--unnamed-line-spacing-29) var(--unnamed-font-family-brandon-grotesque);
+	color: var(--unnamed-color-ffffff);
+	text-align: left;
+	font: normal normal bold 24px/29px Brandon Grotesque;
+	letter-spacing: 4.8px;
+	color: #FFFFFF;
+}
+.CONCEPTION ul li {
+	padding-top: 30px;
+	padding-left: 89px;
+	font: normal normal bold 13px/31px Brandon Grotesque;
+	letter-spacing: 1.3px;
+	color: #FFFFFF;	
+}
+.CONCEPTION span{
+	display: flex;
+	font: normal normal bold 11px/31px Brandon Grotesque;
+	letter-spacing: 1.1px;
+	color: #D1D1D1;
+}
+.succes{
+	position: absolute;
+	width: 34px;
+	border-radius: 50%;
+	height: 34px;
+	transform: translate(-60%, -65%);
+}
+.PROJECTS{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 30px/43px var(--unnamed-font-family-brandon-grotesque);
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	font: normal normal bold 30px/43px Brandon Grotesque;
+	letter-spacing: 9px;
+	color: #262626;
+}
+.box_item h1{
+	font: normal normal bold 30px/43px Brandon Grotesque;
+	letter-spacing: 9px;
+	color: #262626;
+}
+.box_item p{
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	font: normal normal normal 18px/33px Tisa OT;
+	letter-spacing: 0px;
+	width: 661px;
+	height: 102px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.box_item span{
+	color: var(--unnamed-color-000000);
+	text-align: left;
+	font: normal normal normal 11px/20px Arial;
+	letter-spacing: 0.88px;
+	color: #000000;
+	display: inline-block;
+	vertical-align: middle;
+}
+.textdiv div{
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	height: 34px;
+	margin-left: 16px;
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #FFFFFF 5% 5% no-repeat padding-box;
+	box-shadow: 16px 16px 16px 8px #29272721;
+
+}
+.box_item h3{
+	letter-spacing: var(--unnamed-character-spacing-1-2);
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	font: normal normal bold 12px/33px Brandon Grotesque;
+	letter-spacing: 1.2px;
+	color: #262626;
+	padding-left: 5px ;
+	padding-right: 5px;
+}
+.textdiv{
+	display: inline-block;
+	vertical-align: middle;
+}
+.secondline{
+	margin-left: 50px;
+	margin-top: 15px;
+}
+.secondline div{
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	height: 34px;
+	margin-left: 16px;
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #FFFFFF 5% 5% no-repeat padding-box;
+	box-shadow: 15px 12px 12px 12px #00000021;
+}
+.BRUXELLES :nth-child(1) {
+	width: 711px;
+	height: 440px;
+	margin-top: 20px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 50px;
+
+}
+span{
+	color: var(--unnamed-color-959595);
+	text-align: left;
+	font: normal normal bold 11px/31px Brandon Grotesque;
+	letter-spacing: 1.1px;
+	color: #959595;
+	opacity: 1;
+}
+.BRUXELLES :nth-child(1) img{
+	width: 100%;
+	height: 100%;
+}
+.BRUXELLES :nth-child(2){
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	height: 440px;
+	width: 500px;
+	overflow: hidden;
+}
+.BRUXELLES :nth-child(2) h4{
+	letter-spacing: var(--unnamed-character-spacing-1-4);
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	margin-top: 60px;
+	letter-spacing: 1.4px;
+	color: #262626;
+	width: 86px;
+	height: 20px;
+	font-size: 14px;
+}
+.BRUXELLES :nth-child(2) p{
+	display: flex;
+	etter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-262626);
+	text-align: left;
+	font: normal normal normal 15px/33px Tisa OT;
+	color: #262626;
+	padding-top: 5px;
+}
+.BRUXELLES :nth-child(2) span{
+	letter-spacing: var(--unnamed-character-spacing-1-2);
+	color: var(--unnamed-color-959595);
+	text-align: left;
+	font: normal normal bold 12px/33px Brandon Grotesque;
+	letter-spacing: 1.2px;
+	color: #959595;
+	display: flex;
+	padding-top: 35px;
+}
+.BRUXELLES :nth-child(2) img{
+	vertical-align: middle;
+	display: inline-block;
+	transform: rotate(-95deg);
+	cursor: pointer;
+	margin-top: 50px;
+}
+.BRUXELLES :nth-child(2) a{
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 20px;
+	letter-spacing: var(--unnamed-character-spacing-1-2);
+	color: var(--unnamed-color-002d69);
+	text-align: left;
+	font: normal normal bold 12px/33px Brandon Grotesque;
+	letter-spacing: 1.2px;
+	color: #002D69;
+	cursor: pointer;
+	margin-top: 50px;
+}
+.small_box{
+	margin-top: 20px;
+}
+.small_box div{
+	width: 320px;
+	height: 461px;
+	background-color: #002D69;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.smallboxsucces{
+	width: 21px;
+	height: 21px;
+}
+.smalboximg{
+	width: 100%;
+	height: 275px;
 }
